@@ -1,8 +1,8 @@
-#功能作用
+# 功能作用
     远程调用结束后，对得到的返回数据在返回前端前做最后的加工。
 
-#使用示例
-###1）实现RedaResultDecorator接口
+# 使用示例
+### 1）实现RedaResultDecorator接口
 
 ```java
 import com.gtop.reda.core.support.RedaResultDecorator;
@@ -16,7 +16,7 @@ public class MyDecorator implements RedaResultDecorator<MyData> {
     }
 }
 ```
-###2）@RemoteData注解参数赋值
+### 2）@RemoteData注解参数赋值
 
 ```java
 import com.gtop.reda.core.annotation.RemoteData;
