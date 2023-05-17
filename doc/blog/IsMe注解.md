@@ -1,12 +1,12 @@
-#功能作用
+# 功能作用
     指定用于接收远程调用返回的结果映射。
     一般在远程调用多接口时使用
 
-#使用示例
+# 使用示例
 
 ---
-###示例1（远程多接口请求合并）
-####1）定义返回给前端的类
+### 示例1（远程多接口请求合并）
+#### 1）定义返回给前端的类
 
 ```java
 import com.gtop.reda.core.annotation.IsMe;
@@ -21,7 +21,7 @@ public class MyData {
     private Integer totalNumber;
 }
 ```
-####2）多个uri的关联格式，可以直接使用uris，也可实现CustomUris接口，以使用uris为例
+#### 2）多个uri的关联格式，可以直接使用uris，也可实现CustomUris接口，以使用uris为例
 
 ```java
 import com.gtop.reda.core.annotation.RemoteData;
@@ -39,13 +39,13 @@ public class TestController {
 
 }
 ```
-####3）注意事项
+#### 3）注意事项
     这里需要特别注意，由于多个请求是通过CompletableFuture异步完成的，因此需要标识请求时的uri，在异步返回结果后根据标识关联结果。
     因此@IsMe注解的id值和uris中每个uri中两个@中的值需要一致。
 
 ---
-###示例2（单接口类内部映射）
-####1）定义返回给前端的类
+### 示例2（单接口类内部映射）
+#### 1）定义返回给前端的类
 ```java
 import com.gtop.reda.core.annotation.IsMe;
 import lombok.Data;
@@ -56,7 +56,7 @@ public class MyRecord {
     private Integer catNumber;
 }
 ```
-####2）uris设置（也可通过实现CustomUris接口）
+#### 2）uris设置（也可通过实现CustomUris接口）
 ```java
 import com.gtop.reda.core.annotation.RemoteData;
 
@@ -71,5 +71,5 @@ public class TestController {
 
 }
 ```
-####3）说明
+#### 3）说明
     由于只是单接口的远程调用，因此关联IsMe的id
