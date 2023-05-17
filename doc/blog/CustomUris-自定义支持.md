@@ -1,9 +1,9 @@
-#功能作用
+# 功能作用
     动态生成请求的uri集合
 
-#使用示例
+# 使用示例
 
-###1）实现CustomUris接口
+### 1）实现CustomUris接口
 ```java
 import com.gtop.reda.core.support.CustomUris;
 
@@ -18,7 +18,7 @@ public class MyCustomUris implements CustomUris {
     }
 }
 ```
-###2）@RemoteData注解参数赋值
+### 2）@RemoteData注解参数赋值
 
 ```java
 import com.gtop.reda.core.annotation.RemoteData;
