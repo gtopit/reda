@@ -1,7 +1,7 @@
-#功能作用
+# 功能作用
     对远程调用返回的json格式进行解析，自定义自己的解析模板。
-#使用示例
-###1）实现RedaResultTemplate接口
+# 使用示例
+### 1）实现RedaResultTemplate接口
 
 ```java
 
@@ -22,7 +22,7 @@ public class MyTemplate implements RedaResultTemplate {
     }
 }
 ```
-###2）@RemoteData注解参数赋值
+### 2）@RemoteData注解参数赋值
 
 ```java
 import com.gtop.reda.core.annotation.RemoteData;
