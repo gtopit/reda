@@ -1,0 +1,5 @@
+reda:
+  prefix:
+    path: /rd/**
+  formal:
+    env: local
