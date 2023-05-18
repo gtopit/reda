@@ -131,31 +131,24 @@ public class RedaInterceptor implements HandlerInterceptor, RedaResolver {
     }
 
     private void parseRemoteData(Object handler) {
-        DefaultRedaDefinition definition = (DefaultRedaDefinition) dbCache.get();
-        if (definition == null) {
-            synchronized (this) {
-                definition = (DefaultRedaDefinition) dbCache.get();
-                if (definition == null) {
-                    HandlerMethod handlerMethod = (HandlerMethod) handler;
-                    Method method = handlerMethod.getMethod();
-                    RemoteData remoteData = method.getAnnotation(RemoteData.class);
-                    if (remoteData != null) {
-                        definition = new DefaultRedaDefinition();
-                        definition.setDecorator(remoteData.resultDecorator());
-                        if (!remoteData.customUris().isInterface()) {
-                            definition.setRedaUris(resolveUris(remoteData.customUris()));
-                        } else if (remoteData.uris().length > 0) {
-                            definition.setRedaUris(resolveUris(remoteData.uris()));
-                        }
-                        definition.setControllerMethod(method);
-                        definition.setRedaMethod(remoteData.method());
-                        definition.setParameters(new HashMap<>());
-                        definition.setFinalResultClass(resolveFinalResultClass(method));
-                        definition.setResultTemplate(remoteData.resultTemplate());
-                        dbCache.set(definition);
-                    }
-                }
+        DefaultRedaDefinition definition = new DefaultRedaDefinition();
+        HandlerMethod handlerMethod = (HandlerMethod) handler;
+        Method method = handlerMethod.getMethod();
+        RemoteData remoteData = method.getAnnotation(RemoteData.class);
+        if (remoteData != null) {
+            definition = new DefaultRedaDefinition();
+            definition.setDecorator(remoteData.resultDecorator());
+            if (!remoteData.customUris().isInterface()) {
+                definition.setRedaUris(resolveUris(remoteData.customUris()));
+            } else if (remoteData.uris().length > 0) {
+                definition.setRedaUris(resolveUris(remoteData.uris()));
             }
+            definition.setControllerMethod(method);
+            definition.setRedaMethod(remoteData.method());
+            definition.setParameters(new HashMap<>());
+            definition.setFinalResultClass(resolveFinalResultClass(method));
+            definition.setResultTemplate(remoteData.resultTemplate());
+            dbCache.set(definition);
         }
     }
 
