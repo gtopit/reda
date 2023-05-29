@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 远程调用返回的结果惊醒处理类
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-17 16:01
  */
 public interface RedaResultHandler {

@@ -26,6 +26,10 @@
     reda.formal.env指定了注解生效的环境，默认prod
     reda.remoteCall.handler指定远程调用处理类，默认com.gtop.reda.core.support.DefaultRedaCallHandler
 
+# 使用说明
+    应用启动时添加@EnableReda注解即可使用。
+
 # 番外
     为何起reda为项目名称，原本是取remote和data两个单词每个单词的前两个字母，组成了reda，后来通过翻译发现reda竟然叫雷达，似乎和项目本身没啥关系，没关系就没关系吧？！
+
  

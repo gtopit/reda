@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 /**
  * 默认使用
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-16 16:44
  */
 public final class DefaultRedaCallHandler extends ThreadPoolExecutor implements RedaCallHandler, RedaResultHandler {

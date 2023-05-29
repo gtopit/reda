@@ -4,7 +4,7 @@ import com.gtop.reda.core.annotation.IsMe;
 import lombok.Data;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-17 17:42
  */
 @Data

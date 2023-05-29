@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * 业务核心类
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-16 9:05
  */
 public class RedaInterceptor implements HandlerInterceptor, RedaResolver {

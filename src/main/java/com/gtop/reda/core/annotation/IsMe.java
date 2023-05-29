@@ -22,7 +22,7 @@ import java.lang.annotation.*;
  * }
  * controller层的请求方法上的注解@RemoteData(uris = {"meId@1@http://reda/rd/get/fooCount", "meId@2@http://reda/rd/get/barCount"})
  * 其中每个uri两个@中间的值等于@IsMe注解中的id值
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-16 18:14
  */
 @Documented

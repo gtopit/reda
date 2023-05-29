@@ -5,7 +5,7 @@ import com.gtop.reda.core.support.*;
 import java.lang.annotation.*;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-11 23:06
  */
 @Target({ElementType.METHOD})
