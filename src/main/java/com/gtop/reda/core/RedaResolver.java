@@ -6,7 +6,7 @@ import com.gtop.reda.core.support.RedaUri;
 import java.lang.reflect.Method;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-17 12:41
  */
 public interface RedaResolver {

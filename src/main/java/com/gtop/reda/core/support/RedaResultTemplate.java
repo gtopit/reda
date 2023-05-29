@@ -1,7 +1,7 @@
 package com.gtop.reda.core.support;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-17 16:45
  */
 public interface RedaResultTemplate {

@@ -5,7 +5,6 @@ import com.gtop.reda.core.RedaCallHandler;
 import com.gtop.reda.core.RedaInterceptor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -13,11 +12,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import javax.annotation.Resource;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-16 9:09
  */
-@Configuration
 public class RedaConfiguration implements WebMvcConfigurer {
+
+    public RedaConfiguration() {
+    }
 
     @Resource
     private ApplicationContext applicationContext;

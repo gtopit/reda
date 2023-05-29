@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  *     @RdParam("type")
  *     private Integer outType;
  * }
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-16 16:01
  */
 @Documented

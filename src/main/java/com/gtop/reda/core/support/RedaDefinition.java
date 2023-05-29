@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-17 9:52
  */
 public interface RedaDefinition {

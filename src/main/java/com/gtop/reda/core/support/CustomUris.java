@@ -2,7 +2,7 @@ package com.gtop.reda.core.support;
 
 /**
  * 自定义获取uri数组
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-11 23:18
  */
 public interface CustomUris {

@@ -3,7 +3,7 @@ package com.gtop.reda.test;
 import com.gtop.reda.core.support.RedaResultDecorator;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-17 18:49
  */
 public class MyDecorator implements RedaResultDecorator<CountRes> {

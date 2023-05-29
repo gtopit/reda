@@ -3,7 +3,7 @@ package com.gtop.reda.core.config;
 import lombok.Data;
 
 /**
- * @author hongzw@citycloud.com.cn
+ * @author Javy Hong
  * @Date 2023-05-16 15:22
  */
 @Data
